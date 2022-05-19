@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap'); 
+
+* { 
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+ }
+
+body {
+  font-family: 'Caveat', cursive;
+  font-size: 35pt;
+  color: white;
+  position: relative;
+    
+} 
+  
+img {
+width: 450px;
+}
+
+
+b { 
+color: red;
+}
+
+
+nav {
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+main { 
+padding: 50px; }
+
+.btn-box {
+  position: relative;
+  left: 80%;
+}
+
+button {
+  width: 15%;
+  margin-top: 50px;
+  margin-right: 5%;
+  position: fixed;
+  font-size: 25pt;
+}
+
+a { 
+text-decoration: none;
+ }
+
+.burger-btn {
+width: 30px;
+height:30px ;
+margin-left: 25px;
+position: relative;
+cursor: pointer;
+}
+
+.burger-btn:before {
+content: '';
+position: absolute;
+top: 0px;
+width: 30px;
+background-color: white;
+height: 3px;
+}
+
+.burger-btn span {
+position: absolute;
+top: 13px;
+width: 30px;
+background-color: white;
+height: 3px;
+}
+
+.burger-btn:after {
+  content: '';
+position: absolute;
+bottom: 0px;
+width: 30px;
+background-color: white;
+height: 3px;
+}
+
+.content {
+margin-left:  auto;
+margin-right:  auto;
+padding-top: 60px;
+width: 75%;
+display: flex;
+align-items: center;
+}
+
+.text {
+ min-width: 600px;
+}
+
+.image_box {
+margin-left: 10%;
+}
+html { 
+  font-family: Helvetica, Arial, sans-serif; 
+  background-color: black;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .content {
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    display: block;
+    
+    margin-bottom: -50px;
+    min-width: 200px;
+  }
+
+.text {
+ margin-top: 65px;
+}
+}
